@@ -1,7 +1,7 @@
 基于Workerman的物联网后端管理平台设计
 ===
 
-搭建物联网后端，实现对**设备的管理**(这里的设备是护理床，主要可以实现对姿态的实时记录、控制)，具体功能如下。
+搭建物联网后端，实现对温湿传感器的管理，主要可以实现对传感器的实时记录，具体功能如下。
 
 # 功能特征：
  - 设备是基于**TCP长连接**，指令/反馈不定期实时推送，因此需要长连接双向通信。
@@ -47,5 +47,3 @@
  > - 需要mysql数据库的支持(mysql安装教程：([这里](http://www.runoob.com/mysql/mysql-install.html)))，新建db_smartbed数据库后，分别创建bed表和posture表(创建脚本在mysql_create文件夹中，需要在Event.php中修改数据库配置)。
  
 # Reference：
- - 我的设计思路：https://blog.csdn.net/u013480581/article/details/80931778
- - workerman：https://www.workerman.net/
